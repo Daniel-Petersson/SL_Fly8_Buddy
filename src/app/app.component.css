@@ -1,0 +1,43 @@
+/* ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    color: green;
+}
+ul li a:hover{
+     color: skyblue;
+} */
+.Fly8{
+    color: rgb(234, 237, 246);
+}
+.Fly8:hover{
+    color: rgb(58, 85, 137);
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url('/assets/flight.jpg');
+    background-size: cover; /* This ensures the image covers the entire body */
+    /* background-repeat: no-repeat; Prevent the image from repeating */
+  }
+  html, body {
+    height: 100%;
+  }
+  .book{
+    font-size: 17px;
+    font-weight: 600;
+    color: aliceblue;
+  }
+  .book:hover{
+    color: rgb(197, 205, 221);
+  }
+  .lkm{
+    margin-top: 200px;
+  }
+  .navbar-toggler{
+    background-color: aliceblue;
+  }
+  
+  .footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+  }

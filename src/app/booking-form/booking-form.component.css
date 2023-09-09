@@ -1,0 +1,34 @@
+.container {
+    margin-top: 3rem;
+  }
+  
+  .flight-box,
+  .booking-box {
+    padding: 20px;
+    background-color: rgb(242, 245, 216);
+    border: 2px solid rgb(142, 164, 169);
+    box-shadow: 5px 5px 5px 5px rgba(106, 155, 251, 0.4);
+  }
+  
+  .flight-box h5,
+  .booking-box h2 {
+    margin-top: 0;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    margin-right: 10px;
+  }
+  /* styles.css */
+
+/* Style for the form container */
+
+
+  

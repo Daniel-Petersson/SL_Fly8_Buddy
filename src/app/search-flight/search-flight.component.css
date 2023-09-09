@@ -1,0 +1,30 @@
+.kmc{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+label{
+    font-weight: 600;
+}
+.kmc9{
+    border: 2px solid rgb(21, 37, 86);
+    width: 50%;
+    background-color: rgba(244, 239, 212, 0.736);
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .search-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+  }
+   */
