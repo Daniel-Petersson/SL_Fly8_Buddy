@@ -10,6 +10,7 @@ label{
     border: 2px solid rgb(21, 37, 86);
     width: 50%;
     background-color: rgba(244, 239, 212, 0.736);
+    margin: 0 auto; /* Add this line to center the element horizontally */
 }
 
 .container {
@@ -26,5 +27,7 @@ label{
     background-color: #fff;
     max-width: 400px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
    

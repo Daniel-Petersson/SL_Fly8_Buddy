@@ -7,14 +7,15 @@ ul li a:hover{
      color: skyblue;
 } */
 .Fly8{
-    color: rgb(234, 237, 246);
+    color: #E5CAB7;
+    font-weight: 500;
 }
 .Fly8:hover{
-    color: rgb(58, 85, 137);
+    color: #948589;
 }
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-image: url('/assets/flight.jpg');
+    background-image: url('/assets/Flight.jpg');
     background-size: cover; /* This ensures the image covers the entire body */
     /* background-repeat: no-repeat; Prevent the image from repeating */
   }
@@ -24,10 +25,10 @@ body {
   .book{
     font-size: 17px;
     font-weight: 600;
-    color: aliceblue;
+    color: #E5CAB7;
   }
   .book:hover{
-    color: rgb(197, 205, 221);
+    color:#948589;
   }
   .lkm{
     margin-top: 200px;
@@ -41,3 +42,4 @@ body {
     bottom: 0;
     width: 100%;
   }
+ 
