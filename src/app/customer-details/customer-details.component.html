@@ -1,1 +1,27 @@
-<p>customer-details works!</p>
+<!-- customer-details.component.html -->
+<form (ngSubmit)="searchFlights()">
+    <input type="text" [(ngModel)]="search.source" placeholder="Source" name="source">
+    <input type="text" [(ngModel)]="search.destination" placeholder="Destination" name="destination">
+    <input type="date" [(ngModel)]="search.date" name="date">
+    <input type="number" [(ngModel)]="search.adults" placeholder="Number of adults" name="adults">
+    <input type="number" [(ngModel)]="search.children" placeholder="Number of children" name="children">
+    <select [(ngModel)]="search.class" name="class">
+        <option value="economy">Economy</option>
+        <option value="business">Business</option>
+    </select>
+    <button type="submit">Search</button>
+</form>
+
+<table *ngIf="flights.length > 0">
+    <tr *ngFor="let flight of flights">
+        <td>{{ flight.name }}</td>
+        <td>{{ flight.source }}</td>
+        <td>{{ flight.destination }}</td>
+        <td>{{ flight.date }}</td>
+        <td>{{ flight.class }}</td>
+        <td><button (click)="bookFlight(flight)">Book</button></td>
+    </tr>
+</table>
+
+<p *ngIf="confirmation">{{ confirmation }}</p>
+<a *ngIf="ticket" [href]="ticket" download>Download ticket</a>

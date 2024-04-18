@@ -1,5 +1,5 @@
-<div class=" kmc9 mt-4" style= "margin-left: 20px; border-radius: 10px;">
-  <h2 class="p-1" style="font-family: 'Times New Roman', Times, serif; font: weight 2px;">Search Flight</h2>
+<div class="kmc9 mt-4" style="margin-left: 20px; border-radius: 10px;">
+  <h2 class="p-1" style="font-family: 'Times New Roman', Times, serif; font-weight: 2px;">Search Flight</h2>
   <form (submit)="searchFlights()">
     <div class="row mb-3 p-1">
       <div class="col-md-4">
@@ -16,11 +16,15 @@
     <div class="row mb-3 p-2">
       <div class="col-md-6">
         <label for="from">Flying From</label>
-        <input type="text" class="form-control" id="from" name="from" [(ngModel)]="from" required>
+        <select class="form-select" id="from" name="from" [(ngModel)]="from" required>
+          <option *ngFor="let airport of airports" [value]="airport">{{airport}}</option>
+        </select>
       </div>
       <div class="col-md-6">
         <label for="to">Flying To</label>
-        <input type="text" class="form-control" id="to" name="to" [(ngModel)]="to" required>
+        <select class="form-select" id="to" name="to" [(ngModel)]="to" required>
+          <option *ngFor="let airport of airports" [value]="airport">{{airport}}</option>
+        </select>
       </div>
     </div>
     <div class="row mb-3 p-2">
@@ -58,6 +62,6 @@
         </select>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary" style="padding: 10px; margin: 5px; color: rgb(241, 242, 246) ; background-color:rgb(74, 109, 175);">Search Flight</button>
+    <button type="submit" class="btn btn-primary" style="padding: 10px; margin: 5px; color: rgb(241, 242, 246); background-color:rgb(74, 109, 175);">Search Flight</button>
   </form>
 </div>
