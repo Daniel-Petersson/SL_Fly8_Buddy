@@ -23,7 +23,7 @@
       <div class="col-md-6">
         <label for="to">Flying To</label>
         <select class="form-select" id="to" name="to" [(ngModel)]="to" required>
-          <option *ngFor="let airport of airports" [value]="airport">{{airport}}</option>
+          <option *ngFor="let airport of airports" [value]="airport" [disabled]="airport === from">{{airport}}</option>
         </select>
       </div>
     </div>
